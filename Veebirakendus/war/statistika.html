@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+h1{
+	background-color:silver;font:caption
+	width:883px;height:102px
+}
+td{
+	width: 630px
+	
+}
+input.groovybutton
+{
+   font-size:16px;
+   font-family:Arial,sans-serif;
+   height:26px;
+   background-color:orange;
+   background-image:url(back03.gif);
+   border-style:solid;
+   border-color:#DDDDDD;
+   border-width:1px;
+}
+
+</style>
+
+<h1>E-VALIMISED</h1>
+
+<head>
+
+<form>
+<input
+   type="button"
+   name="groovybtn1"
+   class="groovybutton"
+   value="Avaleht"
+   title=""
+   onClick="window.location.href='avaleht.html'"></input><input
+   type="button"
+   name="groovybtn2"
+   class="groovybutton"
+   value="Nimekirjad"
+   title=""
+   onClick="window.location.href='nimekirjad.html'"></input><input
+   type="button"
+   name="groovybtn3"
+   class="groovybutton"
+   value="Tulemused"
+   title=""
+   onClick="window.location.href='tulemused.html'"></form>
+
+<table>
+<script>
+function koik()
+{document.getElementById("koik").innerHTML="Kuvab kogu statistika";}
+function piir()
+{document.getElementById("koik").innerHTML="Kuvab statistika piirkonniti";}
+function era()
+{document.getElementById("koik").innerHTML="Kuvab statistika erakonniti";}
+function kaart()
+{document.getElementById("koik").innerHTML="Kuvab statistika kaardil";}
+function otsi()
+{document.getElementById("koik").innerHTML="Kuvab otsingu tulemused";}
+
+</script>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Statistika</title>
+</head>
+<table>
+<tr>
+<td>
+<button onclick="koik()">Kõik</button>
+<button onclick="piir()">Piirkonniti</button>
+<button onclick="era()">Erakonniti</button>
+<button onclick="kaart()">Kaart</button></td>
+<td>Üksikute kandidaatide võrdlus</td>
+</tr>
+<tr>
+<td></td>
+<td>Otsi kandidaati<br />
+<input type="text"/><br/>
+<button onclick="otsi()">Otsi</button>
+</td></tr>
+<br/>
+</table>
+<table>
+
+<tr>
+<td style="width: 719px"></td>
+<td><p id="otsi"></p></td>
+</tr></table>
+<body>
+<p id="koik"></p><p id="era"></p><p id="kaart"></p><p id="piir"></p>
+</body>
+
+</html>

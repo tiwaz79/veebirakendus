@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+
+h1{
+	background-color:silver;font:caption
+	width:883px;height:102px
+}
+input.groovybutton
+{
+   font-size:16px;
+   font-family:Arial,sans-serif;
+   height:26px;
+   background-color:orange;
+   background-image:url(back03.gif);
+   border-style:solid;
+   border-color:#DDDDDD;
+   border-width:1px;
+}
+
+
+</style>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Kandideeri</title>
+</head>
+<h1>E-VALIMISED</h1>
+
+
+<input
+   type="button"
+   name="groovybtn1"
+   class="groovybutton"
+   value="Nimekirjad"
+   title=""
+   onClick="window.location.href='nimekirjadsees.html'"></input><input
+   type="button"
+   name="groovybtn2"
+   class="groovybutton"
+   value="Hääleta"
+   title=""
+   onClick="window.location.href='haaleta.html'"></input><input
+   type="button"
+   name="groovybtn3"
+   class="groovybutton"
+   value="Tulemused"
+   title=""
+   onClick="window.location.href='tulemusedsees.html'"></input>
+   <input
+   type="button"
+   name="groovybtn3"
+   class="groovybutton"
+   value="Statistika"
+   title=""
+   onClick="window.location.href='statistikasees.html'"></input></form>
+
+<body>
+
+
+<table>
+  <tr>
+    <th>Kandidaadiks registreerimine</th>
+  </tr>
+  <tr>
+    <td><h2>Valige piirkond</h2></td>
+  </tr>
+  <tr>
+    <td><select name="D1" style="width: 206px">
+  <option value="Saare">Saare</option>
+  <option value="Harju">Harju</option>
+  <option value="Ida-Viru">Ida-Viru</option>
+  <option value="Järva">Järva</option>
+  <option value="Lääne">Lääne</option>
+  <option value="Lääne-Viru">Lääne-Viru</option>
+  <option value="Põlva">Põlva</option>
+  <option value="Pärnu">Pärnu</option>
+  <option value="Rapla">Rapla</option>
+  <option value="Tartu">Tartu</option>
+  <option value="Valga">Valga</option>
+  <option value="Viljandi">Viljandi</option>
+  <option value="Võru">Võru</option>
+  <option value="Hiiu">Hiiu</option>
+  <option value="Jõgeva">Jõgeva</option>
+</select>
+</td>
+  </tr>
+  <tr>
+    <td><h2>Valige erakond</h2></td>
+  </tr>
+  <tr>
+    <td><select name="D1" style="width: 206px">
+  <option value="id 1">Erakond 1</option>
+  <option value="id 2">Erakond 2</option>
+  <option value="id 3">Erakond 3</option>
+</select>
+</td>
+  </tr>
+  <tr>
+    <td><script>
+function myFunction()
+{
+alert("Kandideeritud");
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="myFunction()" value="Kandideeri" />
+
+</body>
+
+
+</td>
+  </tr>
+</table>
+<p id="kand"></p>
+</body>
+</html>
