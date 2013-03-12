@@ -1,12 +1,15 @@
-<td class="otsing"><form name="Otsing">
 
+<td class="otsing">
 <table>
 <tr>
 <td style="height: 23px; width: 605px;"><h3>Valige maakond</h3></td>
+<td style="height: 23px; width: 300px;"><h3>Vali erakond</h3></td>
 <td style="height: 23px">Sisesta kandidaadi nimi</td>
 </tr>
 <tr>
-<td style="height: 42px; width: 605px;"><select name="D1" style="width: 206px">
+<td style="height: 42px; width: 605px;">
+<div id='maakond'><select name="D1" style="width: 206px">
+  <option value="PoleOluline">Pole Oluline</option>
   <option value="Saare">Saare</option>
   <option value="Harju">Harju</option>
   <option value="Ida-Viru">Ida-Viru</option>
@@ -22,9 +25,22 @@
   <option value="Võru">Võru</option>
   <option value="Hiiu">Hiiu</option>
   <option value="Jõgeva">Jõgeva</option>
-</select></td>
-<td style="height: 42px"><br />
+</select></div></td>
+<td style="height: 42px; width: 300x;">
+<div id='erakond'>
+<select name="D2" style="width: 100px">
+  <option value="PoleOluline">Pole Oluline</option>
+  <option value="SDE">SDE</option>
+  <option value="REF">REF</option>
+  <option value="KESK">KESK</option>
+  <option value="IRL">IRL</option>
+</select></div></td>
+<td style="height: 42px">
+<br />
 <form action="demo_form.asp">
+<div id='kandidaadiNimi'>
 <input type="text"/>
+</div>
 </form><br />
-<input type="button" value="Otsi" onClick=otsiKandidaati();></input></td></tr></table></td>
+<input type="button" value="Otsi" id="otsi" onClick=otsiKandidaati();></input>
+</td></tr></table></td>

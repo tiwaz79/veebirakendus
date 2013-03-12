@@ -52,7 +52,23 @@ function haaleta(){
 	alert("Teie hääl on antud");
 }
 function otsiKandidaati(){
-	alert("Otsib kandidaati");
+	var erakond = "";
+	var maakond = "";
+	var kandidaadiNimi = "";
+	if($('#erakond :selected').val()!="PoleOluline"){
+		erakond=$('#erakond :selected').val();
+	}
+	if($('#maakond :selected').val()!="PoleOluline"){
+		maakond=$('#maakond :selected').val();
+	}
+	if($('#kandidaadiNimi :input').val()!=""){
+		kandidaadiNimi=$('#kandidaadiNimi :input').val();
+	}
+	if(kandidaadiNimi == "" && maakond == "" && erakond ==""){
+		alert("Viga otsinguparameetritega");
+	}else{
+		alert("Otsitakse kandidaati: "+kandidaadiNimi+" "+erakond+" "+maakond);
+	}
 }
 </script>
      
