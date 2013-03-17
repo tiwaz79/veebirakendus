@@ -46,7 +46,10 @@ function otsi()
 
 
 function kandideeri(){
-	alert("Kandideeritud");
+	if(Validate()){
+		alert("Kandideeritud");
+	}
+	
 }
 function haaleta(){
 	alert("Teie hääl on antud");
@@ -70,6 +73,25 @@ function otsiKandidaati(){
 		alert("Otsitakse kandidaati: "+kandidaadiNimi+" "+erakond+" "+maakond);
 	}
 }
+
+function Validate()
+{
+  if(document.getElementById('Selection').value == ''||
+     document.getElementById('Candidate').value == ''
+     
+		)                
+    {
+     alert('Palun täitke kõik väljad');
+	 document.getElementById('Selection').className = document.getElementById('Selection').className + " error";				 
+     document.getElementById('Candidate').className = document.getElementById('Candidate').className + " error";
+     return false;
+	
+	    }
+	    document.getElementById('Candidate').className = document.getElementById('Candidate').className.replace(" error", "");  
+    document.getElementById('Selection').className = document.getElementById('Selection').className.replace(" error", "");  
+    return true;
+		
+	}      
 </script>
      
      
